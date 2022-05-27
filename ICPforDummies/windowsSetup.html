@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ICP For People Like Me</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="copyfunction.js"></script>
+  <script src="sidebar.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="windowsSetup.html">windowsSetup</a>
+    <a href="https://tjy2n-wiaaa-aaaap-qaisq-cai.ic0.app/">My Personal Website</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span style="font-size:30px;cursor:pointer;float:left;color:white" onclick="openNav()">&#9776; open</span>
+
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+
+
+    <h1>Installation and setup on Window</h1>
+    <img class="icplogo" src="images/icplogo.png" alt="cloud-img">
+    <div class="Requiments">
+      <h2>Requiments</h2>
+      <li>You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11</li>
+    </div>
+
+
+
+    <div class="Guide">
+
+
+      <h2>Setting it up WSL</h2>
+
+      <ol class="list">
+        <li>Run Windows PowerShell in Administrator</li>
+        <img class="" src="images/powershell.png" alt="powershell">
+        <li>WSL is the Windows Subsystem for Linux and it will allow us to run command line commands in Windows.</li>
+        <li>Copy and paste code below into PowerShell and hit the enter key to run it.</li>
+        <a href="#" onclick="CopyToClipboard('WSL');return false;">Copy Text</a>
+
+        <div id="WSL" style="background:white;">wsl --install</div>
+        <li>Restart PC once completed</li>
+        <li>Upon restart you will be prompted to setup an ubuntu username and password <br>
+          and then you will have successfully installed WSL. Make sure to keep username and passord safe somewhere. </li>
+        <li>Confirm you have everything set up properly</li>
+        <a href="#" onclick="CopyToClipboard('Copy2');return false;">Copy Text</a>
+
+        <div id="Copy2" style="background:white;">wsl --list --verbose</div>
+
+        <li>If all went well you should see this(make sure you are on version 2!)</li>
+        <br>
+        <img class="wslconfirmimage" src="images/wslconfirm.PNG" alt="wsl-confrm">
+
+      </ol>
+
+
+    </div>
+      <a class="NextButton" href="vscode.html">Next:Install VS Code</a>
+
+    <footer>
+      <a class="footer-link" href="https://www.linkedin.com/in/jason-chalky-1a08a523/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/ChalkyJason">Twitter</a>
+      <a class="footer-link" href="index.html">Home</a>
+      <p>© Jason Chalky</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
