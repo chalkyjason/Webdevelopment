@@ -17,14 +17,12 @@
 
 
   <div id="mySidenav" class="sidenav">
-
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="windowsSetup.html">windowsSetup</a>
-      <a href="https://tjy2n-wiaaa-aaaap-qaisq-cai.ic0.app/">My Personal Website</a>
-
-
-
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="windowsSetup.html">windowsSetup</a>
+    <a href="https://tjy2n-wiaaa-aaaap-qaisq-cai.ic0.app/">My Personal Website</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
   </div>
 
   <!-- Use any element to open the sidenav -->
@@ -35,36 +33,44 @@
   <div id="main">
 
 
-    <h1>VS Code</h1>
+    <h1>Install DFX</h1>
     <img class="icplogo" src="images/icplogo.png" alt="icp-logo">
-    <br>
-
-<div class="Guide">
 
 
 
 
 
+    <div class="Guide">
 
-      <h2>Install VS code and extensions</h2>
+
+      <h2>DFX is the default SDK maintained by the DFINITY foundation. </h2>
 
       <ol class="list">
-        <li>Download and install the latest version of VSCode </li>
-         <a href="  https://code.visualstudio.com/">VS Code Download</a>
-        <li> Install the Motoko language extension in VSCode (make sure it’s from the Dfinity team, or just use the link below).</li>
-    <a href="https://marketplace.visualstudio.com/items?itemName=dfinity-foundation.vscode-motoko"> Motoko extension for VSCode!</a>
+        <li> Open up Ubuntu from the Start menu</li>
+        <img class="" src="images/ubuntu.png" alt="">
+        <li>Copy the following command and paste it into your terminal and hit enter to install DFX.</li>
+        <a href="#" onclick="CopyToClipboard('copy3');return false;">Copy Text</a>
 
-      
-        <li> Install the Remote WSL extension.</li>
-        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">WSL Extensions</a>
+        <div id="copy3" style="background:white;">
+          DFX_VERSION=0.9.3 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"</div>
+        <li>Once DFX installs, It will show you where</li>
+        <img class="" src="images/installedDFX.png" alt="">
+        <li>Check which version DFX has installed and confim installion</li>
+        <a href="#" onclick="CopyToClipboard('copy3');return false;">Copy Text</a>
+
+        <div id="copy3" style="background:white;">
+
+          dfx --version</div>
+        
+
+
 
 
       </ol>
 
 
-
     </div>
-    <a class="NextButton" href="DFX.html">Next: Install DFX</a>
+    <a class="NextButton" href="v.html">Next:</a>
 
 
 

@@ -22,6 +22,26 @@ h2 {
   color: #faa739;
 }
 
+/* unvisited link */
+a:link {
+  color: #582785;
+}
+
+/* visited link */
+a:visited {
+  color: #5c2684;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ed1e79;
+}
+
+/* selected link */
+a:active {
+  color: #29abe2;
+}
+
 .NextButton {
   font-size: 2em;
   text-align: center;
@@ -71,10 +91,11 @@ h2 {
   color: #818181;
   display: block;
   transition: 0.3s;
+
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav a:hover  {
   color: #f1f1f1;
 }
 
@@ -85,6 +106,7 @@ h2 {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -119,7 +141,7 @@ h2 {
 }
 
 .list {
-  color: #7d03ad;
+  color: #5c2684;
   display: inline-block;
   text-align: left;
 }
