@@ -33,7 +33,7 @@
   <div id="main">
 
 
-    <h1>Install DFX</h1>
+    <h1>Installing Node</h1>
     <img class="icplogo" src="images/icplogo.png" alt="icp-logo">
 
 
@@ -43,34 +43,49 @@
     <div class="Guide">
 
 
-      <h2>DFX is the default SDK maintained by the DFINITY foundation. </h2>
+      <h2>Homebrew </h2>
 
       <ol class="list">
-        <li> Open up Ubuntu from the Start menu</li>
+        <li>Open Up Ubuntu</li>
         <img class="" src="images/ubuntu.png" alt="">
-        <li>Copy the following command and paste it into your terminal and hit enter to install DFX.</li>
-        <a href="#" onclick="CopyToClipboard('copy3');return false;">Copy Text</a>
 
-        <div id="copy3" style="background:white;">
-          DFX_VERSION=0.9.3 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"</div>
-        <li>Once DFX installs, It will show you where</li>
-        <img class="" src="images/installedDFX.png" alt="">
-        <li>Check which version DFX has installed and confim installion</li>
-        <a href="#" onclick="CopyToClipboard('copy3');return false;">Copy Text</a>
+        <li>Copy and past command to install homebrew</li>
+        <a href="#" onclick="CopyToClipboard('copy4');return false;">Copy Text</a>
 
-        <div id="copy3" style="background:white;">
+        <div id="copy4" style="background:white;">
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</div>
 
-          dfx --version</div>
+        <li>You will be asked for password you set early to install</li>
 
+        <li>The installer will tell you how to add brew to the path</li>
+        <img class="" src="images/hbpath.png" alt="" height="300px">
 
+        <li>Next you will install Homebrew's dependencies</li>
+        <a href="#" onclick="CopyToClipboard('copy5');return false;">Copy Text</a>
+        <div id="copy5" style="background:white;">
+          sudo apt-get install build-essential</div>
+      
 
+        <li>To check to make sure it installed correctly enter this!</li>
+        <a href="#" onclick="CopyToClipboard('copy6');return false;">Copy Text</a>
+        <div id="copy6" style="background:white;">
+          brew --version</div>
 
+        <li>Now intstall the NODE</li>
+        <a href="#" onclick="CopyToClipboard('copy7');return false;">Copy Text</a>
+        <div id="copy7" style="background:white;">
+          brew install node@16</div>
 
+        <li>Now check the node version</li>
+        <a href="#" onclick="CopyToClipboard('copy8');return false;">Copy Text</a>
+        <div id="copy8" style="background:white;">
+
+  node --version</div>
       </ol>
 
 
     </div>
-    <a class="NextButton" href="node.html">Next:Install Node(Homebrew)</a>
+    <a class="NextButton" href="v.html">Next:</a>
 
 
 
