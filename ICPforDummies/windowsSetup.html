@@ -37,7 +37,7 @@
     <img class="icplogo" src="images/icplogo.png" alt="cloud-img">
     <div class="Requiments">
       <h2>Requiments</h2>
-      <li>You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11</li>
+      <p>*You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11</p>
     </div>
 
 
@@ -53,15 +53,15 @@
         <li>WSL is the Windows Subsystem for Linux and it will allow us to run command line commands in Windows.</li>
         <li>Copy and paste code below into PowerShell and hit the enter key to run it.</li>
         <a href="#" onclick="CopyToClipboard('WSL');return false;">Copy Text</a>
-
-        <div id="WSL" style="background:white;">wsl --install</div>
+        <br/>
+        <div id="WSL" style="background:black; display:inline;">wsl --install</div>
         <li>Restart PC once completed</li>
-        <li>Upon restart you will be prompted to setup an ubuntu username and password <br>
+        <li>Upon restart you will be prompted to setup an ubuntu username and password <br />
           and then you will have successfully installed WSL. Make sure to keep username and passord safe somewhere. </li>
         <li>Confirm you have everything set up properly</li>
         <a href="#" onclick="CopyToClipboard('Copy2');return false;">Copy Text</a>
-
-        <div id="Copy2" style="background:white;">wsl --list --verbose</div>
+  <br>
+        <div id="Copy2" style="background:black; display:inline;">wsl --list --verbose</div>
 
         <li>If all went well you should see this(make sure you are on version 2!)</li>
         <br>
