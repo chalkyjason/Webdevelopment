@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-  color:#ed1e79;
+  color: #ed1e79;
   text-align: center;
   font-size: 1.5em;
   margin: 0;
@@ -20,13 +20,23 @@ p {
 
 h2 {
   color: #faa739;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 1.75em
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.75em
+}
+
+.footer {
+  position: fixed;
+  ;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #522785;
 }
 
 /* unvisited link */
 a:link {
-  color: #faa739;
+  color: #f15a24;
 }
 
 /* visited link */
@@ -48,6 +58,7 @@ a:active {
   font-size: 2em;
   text-align: center;
   color: #29abe2;
+  padding-bottom: 100px;
 }
 
 .topcontainer {}
@@ -57,8 +68,6 @@ a:active {
 }
 
 .logo {}
-
-
 
 /* The side navigation menu */
 .sidenav {
@@ -91,11 +100,10 @@ a:active {
   color: #818181;
   display: block;
   transition: 0.3s;
-
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover  {
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
@@ -106,7 +114,6 @@ a:active {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -141,8 +148,19 @@ a:active {
 }
 
 .list {
-  color:#29abe2;
+  color: #29abe2;
   display: inline-block;
   text-align: left;
+}
+
+.background{
+  position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:-1;
+    
 
 }
