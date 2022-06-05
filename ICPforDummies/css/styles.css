@@ -5,23 +5,26 @@ body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 7em;
   color: #29abe2;
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 10px 3px black;
 }
 
 p {
   color: #ed1e79;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3em;
   margin: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2 {
   color: #faa739;
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 1.75em
+  font-size: 1.75em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .footer {
@@ -32,26 +35,31 @@ h2 {
   width: 100%;
   text-align: center;
   background-color: #522785;
+    font-size: 10px;
 }
 
 /* unvisited link */
 a:link {
   color: #f15a24;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* visited link */
 a:visited {
   color: #ed1e79;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* mouse over link */
 a:hover {
   color: #ed1e79;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* selected link */
 a:active {
   color: #29abe2;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .NextButton {
@@ -145,6 +153,7 @@ a:active {
   line-height: 190%;
   font-size: 1.5em;
   width: auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .list {
@@ -153,14 +162,11 @@ a:active {
   text-align: left;
 }
 
-.background{
+.background {
   position: absolute;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index:-1;
-    
-
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
