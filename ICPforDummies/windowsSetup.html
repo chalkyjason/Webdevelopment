@@ -3,41 +3,108 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ICP For People Like Me</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/styles.css">
   <script src="copyfunction.js"></script>
-  <script src="sidebar.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="particle.ja-master/src/particls"></script>
+  <script src="customParticles.js"></script>
+
+  <script type="text/javascript">
+    window.
+    onload
+      = function() {
+        Particles.init({
+          selector: '.background',
+          color: ['#29abe2', '#404B69', '#faa739'],
+          sizeVariations: 4,
+          maxParticles: 300,
+          speed: .25,
+          connectParticles: true
+
+
+        });
+      }
+  </script>
+   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet"> -->
+
 
 </head>
 
 <body>
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-warning tabindex=-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ICP for People Like Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Windows Setup
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="windowsSetup.html">Windows Setup</a></li>
+                <li><a class="dropdown-item" href="vscode.html">Install VS Code</a></li>
+                <li><a class="dropdown-item" href="DFX.html">Install DFX</a></li>
+                <li><a class="dropdown-item" href="node.html">Install Node(Homebrew)</a></li>
+                <li><a class="dropdown-item" href="firstdapp.html">Create First DApp</a></li>
 
 
-  <div id="mySidenav" class="sidenav">
+                <!-- <li>
+                  <hr class="dropdown-divider" style="border-color:white;">
+                </li>
+
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+
+              </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="windowsSetup.html">windowsSetup</a>
     <a href="https://tjy2n-wiaaa-aaaap-qaisq-cai.ic0.app/">My Personal Website</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
-  </div>
+  </div> -->
 
   <!-- Use any element to open the sidenav -->
-  <span style="font-size:30px;cursor:pointer;float:left;color:white" onclick="openNav()">&#9776; open</span>
+  <!-- <span style="font-size:30px;cursor:pointer;float:left;color:white" onclick="openNav()">&#9776; open</span> -->
 
 
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
 
 
-    <h1>Installation and setup on Window</h1>
+
+
+    <h1 style="font-size: 5em;">Installation and setup on Window</h1>
     <img class="icplogo" src="images/icplogo.png" alt="cloud-img">
     <div class="Requiments">
       <h2>Requiments</h2>
-      <p>*You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11</p>
+      <p style="font-size: 1.5em;">*You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11</p>
     </div>
 
 
@@ -53,25 +120,25 @@
         <li>WSL is the Windows Subsystem for Linux and it will allow us to run command line commands in Windows.</li>
         <li>Copy and paste code below into PowerShell and hit the enter key to run it.</li>
         <a href="#" onclick="CopyToClipboard('WSL');return false;">Copy Text</a>
-        <br/>
+        <br />
         <div id="WSL" style="background:black; display:inline;">wsl --install</div>
         <li>Restart PC once completed</li>
-        <li>Upon restart you will be prompted to setup an ubuntu username and password <br />
-          and then you will have successfully installed WSL. Make sure to keep username and passord safe somewhere. </li>
+        <li>Upon restart you will be prompted to setup an ubuntu username and password
+          and then you will have successfully installed WSL. Make sure to keep username and password safe somewhere. </li>
         <li>Confirm you have everything set up properly</li>
         <a href="#" onclick="CopyToClipboard('Copy2');return false;">Copy Text</a>
-  <br>
+        <br>
         <div id="Copy2" style="background:black; display:inline; ">wsl --list --verbose</div>
 
         <li>If all went well you should see this(make sure you are on version 2!)</li>
         <br>
-        <img class="wslconfirmimage" src="images/wslconfirm.PNG" alt="wsl-confrm"  >
+        <img class="wslconfirmimage" src="images/wslconfirm.PNG" alt="wsl-confrm">
 
       </ol>
 
 
     </div>
-      <a class="NextButton" href="vscode.html">Next:Install VS Code</a>
+    <a class="NextButton" href="vscode.html">Next:Install VS Code</a>
 
     <div class="footer">
       <a class="footer-link" href="https://www.linkedin.com/in/jason-chalky-1a08a523/">LinkedIn</a>
@@ -79,8 +146,11 @@
       <a class="footer-link" href="index.html">Home</a>
       <p>© Jason Chalky</p>
     </div>
-
   </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<canvas class="background"></canvas>
+
+<script src="particles.js-master/dist/particles.min.js"></script>
 </body>
 
 </html>

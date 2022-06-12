@@ -96,8 +96,9 @@
   <div id="main">
 
 
-    <h1>Installing Node</h1>
+    <h1>Create your first DApp</h1>
     <img class="icplogo" src="images/icplogo.png" alt="icp-logo">
+    <h2>Time to test to make sure everything works, because I am a dummy and might have screwed it up</h2>
 
 
 
@@ -106,57 +107,93 @@
     <div class="Guide">
 
 
-      <h2>Homebrew </h2>
-
       <ol class="list">
-        <li>Open Up Ubuntu</li>
-        <img class="" src="images/ubuntu.png" alt="">
-
-        <li>Copy and past command to install homebrew</li>
-        <a href="#" onclick="CopyToClipboard('copy4');return false;">Copy Text</a>
+        <h3>Create the Default Hello World DApp</h3>
+        <li>open up Ubuntu to make a new project by creating a new folder with this command</li>
+        <a href="#" onclick="CopyToClipboard('copy9');return false;">Copy Text</a>
         <br>
-        <div id="copy4" style="background:black;display:inline;">
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</div>
+        <div id="copy9" style="background:black;display:inline;">
 
-        <li>You will be asked for password you set early to install</li>
+          mkdir testProject</div>
 
-        <li>The installer will tell you how to add brew to the path</li>
-        <img class="" src="images/hbpath.png" alt="" height="300px">
-
-        <li>Next you will install Homebrew's dependencies</li>
-        <a href="#" onclick="CopyToClipboard('copy5');return false;">Copy Text</a>
+        <li>change the directpry into the new project you just created</li>
+        <a href="#" onclick="CopyToClipboard('copy10');return false;">Copy Text</a>
         <br>
-        <div id="copy5" style="background:black;display:inline;">
-          sudo apt-get install build-essential</div>
+        <div id="copy10" style="background:black;display:inline;">
 
+          cd testProject</div>
 
-        <li>To check to make sure it installed correctly enter this!</li>
-        <a href="#" onclick="CopyToClipboard('copy6');return false;">Copy Text</a>
+        <li>inside this folder we are going to create a prebuilt project for you using this command</li>
+        <a href="#" onclick="CopyToClipboard('copy11');return false;">Copy Text</a>
         <br>
-        <div id="copy6" style="background:black;display:inline;">
-          brew --version</div>
+        <div id="copy11" style="background:black;display:inline;">
 
-        <li>Now intstall the NODE</li>
-        <a href="#" onclick="CopyToClipboard('copy7');return false;">Copy Text</a>
+          dfx new hello</div>
+
+        <li>To see where this new project is installed you can use this command</li>
+
+        <a href="#" onclick="CopyToClipboard('copy12');return false;">Copy Text</a>
         <br>
-        <div id="copy7" style="background:black;display:inline">
-          brew install node@16</div>
+        <div id="copy12" style="background:black;display:inline;">
 
-        <li>Now check the node version</li>
-        <a href="#" onclick="CopyToClipboard('copy8');return false;">Copy Text</a>
+          explorer.exe .</div>
+
+        <li>Now you will want to open up VScode and click the bottome left like the image shows</li>
+        <img class="" src="images/VScodeWSL.png" alt="">
+        <li>select NEW WSL Window</li>
+        <img class="" src="images/newWSLwindow.png" alt="">
+        <li>On the left you will go into the extension tabe and instakk WSL:Ubuntu if you have not done so in the past</li>
+        <img class="" src="images/motokoEXT.png" alt="">
+        <h3>Time to Deploy the DApp to local Network</h3>
+        <li>In VSCoder go to the terminal tab and select New Terminal</li>
+        <img class="" src="images/wslnewterminal.png" alt="">
+        <li>In that terminal you are go to post this commad to start DFX</li>
+
+        <a href="#" onclick="CopyToClipboard('copy13');return false;">Copy Text</a>
         <br>
-        <div id="copy8" style="background:black;display:inline;">
+        <div id="copy13" style="background:black;display:inline;">
 
-          node --version</div>
+
+          dfx start </div>
+        <li>Now you will need to open another terminal by click the plus button, or going to the tab up top again</li>
+        <img class="" src="images/2ndterminal.png" alt="">
+
+        <li>Once the new terminal is open you need to get inside the hello project by running this command</li>
+        <a href="#" onclick="CopyToClipboard('copy14');return false;">Copy Text</a>
+        <br>
+        <div id="copy14" style="background:black;display:inline;">
+
+
+          cd testProject/hello </div>
+
+        <li>Now you can deploy you first project running this command in the terminal</li>
+        <a href="#" onclick="CopyToClipboard('copy15');return false;">Copy Text</a>
+        <br>
+        <div id="copy15" style="background:black;display:inline;">
+
+
+          dfx deploy </div>
+        <li>Once that deploys run one last command</li>
+        <a href="#" onclick="CopyToClipboard('copy16');return false;">Copy Text</a>
+        <br>
+        <div id="copy16" style="background:black;display:inline;">
+
+          npm start </div>
+
+          <li>Congrats if all was succesfull, you launched your first DApp on your local network, oh you want to see it I guess.</li>
+          <a href="http://localhost:8080/">http://localhost:8080/</a>
+
+
+
       </ol>
 
 
     </div>
-    <a class="NextButton" href="firstdapp.html">Next: Create First DApp</a>
 
     <canvas class="background"></canvas>
 
     <script src="particles.js-master/dist/particles.min.js"></script>
+
 
     <div class="footer">
       <a class="footer-link" href="https://www.linkedin.com/in/jason-chalky-1a08a523/">LinkedIn</a>

@@ -2,7 +2,10 @@ body {
   margin: 0;
   text-align: center;
   background-color: #522785;
+  z-index: 0;
+
 }
+
 
 h1 {
   font-size: 7em;
@@ -10,6 +13,7 @@ h1 {
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
   text-shadow: 10px 3px black;
+  margin-top: 40px;
 }
 
 p {
@@ -46,7 +50,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: #ed1e79;
+  color:  #29abe2;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -67,71 +71,72 @@ a:active {
   text-align: center;
   color: #29abe2;
   padding-bottom: 100px;
+
 }
 
-.topcontainer {}
+
 
 .icplogo {
   height: 200px;
 }
 
-.logo {}
+
 
 /* The side navigation menu */
-.sidenav {
-  height: 100%;
+/* .sidenav {
+  height: 100%; */
   /* 100% Full-height */
-  width: 0;
+  /* width: 0; */
   /* 0 width - change this with JavaScript */
-  position: fixed;
+  /* position: fixed; */
   /* Stay in place */
-  z-index: 1;
+  /* z-index: 1; */
   /* Stay on top */
-  top: 0;
+  /* top: 0; */
   /* Stay at the top */
-  left: 0;
-  background-color: #111;
+  /* left: 0;
+  background-color: #f15a24; */
   /* Black*/
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* Disable horizontal scroll */
-  padding-top: 60px;
+  /* padding-top: 60px; */
   /* Place content 60px from the top */
-  transition: 0.5s;
+  /* transition: 0.5s; */
   /* 0.5 second transition effect to slide in the sidenav */
-}
+/* } */
 
 /* The navigation menu links */
-.sidenav a {
+/* .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
-}
+} */
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+/* .sidenav a:hover {
   color: #f1f1f1;
-}
+} */
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+/* .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
+}  */
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+/* #main {
   transition: margin-left .5s;
   padding: 20px;
-}
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
   }
@@ -139,7 +144,7 @@ a:active {
   .sidenav a {
     font-size: 18px;
   }
-}
+}  */
 
 .Guides {
   margin: 30px;
@@ -152,21 +157,32 @@ a:active {
   color: #7d03ad;
   line-height: 190%;
   font-size: 1.5em;
-  width: auto;
+  width: 100%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background:#371b59;
+
 }
 
 .list {
   color: #29abe2;
-  display: inline-block;
+
   text-align: left;
 }
 
 .background {
-  position: absolute;
+  position:absolute;
   top: 0;
-  bottom: 0;
+  bottom:0;
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+.navbar-nav .nav-link
+{
+  color: black;
+}
+.navbar-nav .dropdown-menu
+{
+  background-color: black;
 }
