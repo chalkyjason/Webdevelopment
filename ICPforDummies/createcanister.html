@@ -43,14 +43,14 @@
                 <li><a class="dropdown-item" href="firstdapp.html">Create First DApp</a></li>
 
               </ul>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Static Website
-                </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Static Website
+              </a>
               <ul class="dropdown-menu " aria-labelledby="offcanvasNavbarDropdown">
-                  <li><a class="dropdown-item" href="createcanister.html">Create Canister</a></li>
-                    <li><a class="dropdown-item" href="staticWebsite.html">Create Static Website</a></li>
-                </ul>
+                <li><a class="dropdown-item" href="createcanister.html">Create Canister</a></li>
+                <li><a class="dropdown-item" href="staticWebsite.html">Create Static Website</a></li>
+              </ul>
 
         </div>
       </div>
@@ -78,34 +78,59 @@
         * A couple bucks worth of ICP on you wallet address
       </p>
       <p style="font-size: 1.5em;">
-        * A computer with the sdk of  <a href="https://gzd4n-lyaaa-aaaao-aae3q-cai.ic0.app/DFX.html">DFX installed</a>
+        * A computer with the sdk of <a href="https://gzd4n-lyaaa-aaaao-aae3q-cai.ic0.app/DFX.html">DFX installed</a>
       </p>
     </div>
     <br>
     <div class="Guide">
 
 
-      <h2>Using nns because we dumb</h2>
+      <h3>Setting up canister</h3>
 
       <ol class="list">
         <li>Sign in you nns account to start once you have added funds</li>
-        <img class="" src="staticWebsite/images/nnsMain.png" alt=""  height="400px">
+        <img class="" src="staticWebsite/nnsMain.png" alt="" height="400px">
         <li>On the top right click the canister button</li>
-        <img class="" src="staticWebsite/images/canisterbutton.png" alt="" height="75px">
+        <img class="" src="staticWebsitecanisterbutton.png" alt="" height="75px">
         <li>Click the blue button that says create or link a canister</li>
-        <img class="" src="staticWebsite/images/createcanisterbutton.png" alt="" height="50px">
+        <img class="" src="staticWebsite/createcanisterbutton.png" alt="" height="50px">
 
         <li>Now Select create a new canister</li>
-        <img class="" src="staticWebsite/images/createcanisterbutton2.png" alt="" height="125px">
+        <img class="" src="staticWebsite/createcanisterbutton2.png" alt="" height="125px">
         <li>Select the wallet you want to use to add cycles to the canister</li>
-        <img class="" src="staticWebsite/images/icpWallet.png" alt="" height="125px">
+        <img class="" src="staticWebsite/icpWallet.png" alt="" height="125px">
         <li>Enter the amount you would like to use, create one cost you 1 cycle so what ever you add minus one will be whats left</li>
-<img class="" src="staticWebsite/images/icpWallet2.png" alt="" height="250px">
+        <img class="" src="staticWebsite/icpWallet2.png" alt="" height="250px">
         <li>Going to want to click confim once you review to make sure eveyrthing is correct</li>
-        <img class="" src="staticWebsite/images/reviewICP.png" alt="" height="150px">
+        <img class="" src="staticWebsite/reviewICP.png" alt="" height="150px">
+      </ol>
+      <h3>Creating the project and connecting canister to it</h3>
+      <ol class="list">
+        <li>You are going to want to create the project where dfx is installed</li>
+        <li>You can look at what we are building and deploying <a href="https://t6srm-dyaaa-aaaao-aahlq-cai.ic0.app/index.html">HERE!</a></li>
+        <li>Clone the project</li>
+        <a href="#" onclick="CopyToClipboard('CC1');return false;">Copy Text</a>
+        <br>
+        <div id="CC1" style="background:black; display:inline;">git clone https://github.com/chalkyjason/ICP4SimpleWebsite.git </div>
+        <li>Now get your princle ID by runing this command</li>
+        <a href="#" onclick="CopyToClipboard('CC2');return false;">Copy Text</a>
+        <br>
+        <div id="CC2" style="background:black; display:inline;">dfx identity get-principal</div>
+        <br>
+          <img class="" src="staticWebsite/images/getprincipleid.png" alt="" height="50px">
+          <li>You will now need to copy the princile ID so we add it as a controller in the canister</li>
+          <img class="" src="staticWebsite/addprincipleid.png" alt="" height="300px">
+          <li>Copy the canister ID now, so we can tell the project which canister we will deploying too</li>
+          <li>Open the project in whatever you are using, I like atom and VS Code myself for this and change the canister_ids.json to your canister</li>
+          <img class="" src="staticWebsite/canisteridjson.png" alt="" height="125px">
+          <li>Now we deploy to the IC Network!</li>
+          <a href="#" onclick="CopyToClipboard('CC3');return false;">Copy Text</a>
+          <br>
+          <div id="CC3" style="background:black; display:inline;">dfx deploy --network ic --no-wallet</div>
+          <li>If everything worked you can check you site by youcanisteridhere.ic0.app</li>
+          <li>If you need to update the site, just use the same command as before. It cost you everytime you do this, so keep that in mind. But it will be updating what is need.</li>
 
       </ol>
-  <h2>Hey dummy, you did it, good job! Those weird letters and numbers. Thats your canister ID!</h2>
 
     </div>
     <a class="NextButton" href="staticWebsite.html">Next: Create Staic Website</a>
