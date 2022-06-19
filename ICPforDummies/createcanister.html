@@ -89,20 +89,20 @@
 
       <ol class="list">
         <li>Sign in you nns account to start once you have added funds</li>
-        <img class="" src="staticWebsite/nnsMain.png" alt="" height="400px">
+        <img class="" src="StaticWebsite/nnsMain.png" alt="" height="400px">
         <li>On the top right click the canister button</li>
-        <img class="" src="staticWebsitecanisterbutton.png" alt="" height="75px">
+        <img class="" src="StaticWebsite/canisterbutton.png" alt="" height="75px">
         <li>Click the blue button that says create or link a canister</li>
-        <img class="" src="staticWebsite/createcanisterbutton.png" alt="" height="50px">
+        <img class="" src="StaticWebsite/createcanisterbutton.png" alt="" height="50px">
 
         <li>Now Select create a new canister</li>
-        <img class="" src="staticWebsite/createcanisterbutton2.png" alt="" height="125px">
+        <img class="" src="StaticWebsite/createcanisterbutton2.png" alt="" height="125px">
         <li>Select the wallet you want to use to add cycles to the canister</li>
-        <img class="" src="staticWebsite/icpWallet.png" alt="" height="125px">
+        <img class="" src="StaticWebsite/icpWallet.png" alt="" height="125px">
         <li>Enter the amount you would like to use, create one cost you 1 cycle so what ever you add minus one will be whats left</li>
-        <img class="" src="staticWebsite/icpWallet2.png" alt="" height="250px">
+        <img class="" src="StaticWebsite/icpWallet2.png" alt="" height="250px">
         <li>Going to want to click confim once you review to make sure eveyrthing is correct</li>
-        <img class="" src="staticWebsite/reviewICP.png" alt="" height="150px">
+        <img class="" src="StaticWebsite/reviewICP.png" alt="" height="150px">
       </ol>
       <h3>Creating the project and connecting canister to it</h3>
       <ol class="list">
@@ -117,23 +117,26 @@
         <br>
         <div id="CC2" style="background:black; display:inline;">dfx identity get-principal</div>
         <br>
-          <img class="" src="staticWebsite/images/getprincipleid.png" alt="" height="50px">
+          <img class="" src="StaticWebsite/images/getprincipleid.png" alt="" height="50px">
           <li>You will now need to copy the princile ID so we add it as a controller in the canister</li>
-          <img class="" src="staticWebsite/addprincipleid.png" alt="" height="300px">
+          <img class="" src="StaticWebsite/addprincipleid.png" alt="" height="300px">
           <li>Copy the canister ID now, so we can tell the project which canister we will deploying too</li>
           <li>Open the project in whatever you are using, I like atom and VS Code myself for this and change the canister_ids.json to your canister</li>
-          <img class="" src="staticWebsite/canisteridjson.png" alt="" height="125px">
+          <img class="" src="StaticWebsite/canisteridjson.png" alt="" height="125px">
           <li>Now we deploy to the IC Network!</li>
           <a href="#" onclick="CopyToClipboard('CC3');return false;">Copy Text</a>
           <br>
           <div id="CC3" style="background:black; display:inline;">dfx deploy --network ic --no-wallet</div>
-          <li>If everything worked you can check you site by youcanisteridhere.ic0.app</li>
-          <li>If you need to update the site, just use the same command as before. It cost you everytime you do this, so keep that in mind. But it will be updating what is need.</li>
-
+          <h4>If everything worked you can check you site by youcanisteridhere.ic0.app</h4>
+      <h4>If you need to update the site, just use the same command as before. It cost you everytime you do this, so keep that in mind. But it will be updating what is need</h4>
       </ol>
 
     </div>
-    <a class="NextButton" href="staticWebsite.html">Next: Create Staic Website</a>
+
+  <a class="NextButton" href="staticWebsite.html">Next: Create Staic Website</a>
+
+
+</div>
 
 
 
@@ -147,6 +150,4 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-
-</html>
+</body></html>
